@@ -14,3 +14,10 @@ library(tidyverse)
 iris
 ```
 
+```{r}
+iris_scatter <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point()
+
+iris_scatter
+```
+
