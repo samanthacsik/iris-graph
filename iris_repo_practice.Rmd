@@ -15,9 +15,9 @@ iris
 ```
 
 ```{r}
-iris_scatter <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point(aes(color = "grey")) +
-  labs(x = "Petal Length (cm)", y = "Petal Width (cm)")
+iris_scatter <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
+  geom_point() +
+  labs(x = "Petal Length (cm)", y = "Petal Width (cm)", title = "Figure 1. Scatterplot of petal width vs petal length.")
 
 iris_scatter
 ```
